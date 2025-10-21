@@ -1,0 +1,65 @@
+.landing_page {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #1C1C1C 40%, #08463B);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#header {
+    position: absolute;
+    inset: 0;
+}
+
+#name_title {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        >p {
+            font-size: 40px;
+            font-family: 'Fira Code';
+        }
+        >h1 {
+            font-size: 128px;
+            font-weight: 700;
+        }
+}
+
+.link_buttons {
+    >button {
+        width: 172px;
+        height: 48px;
+        border: 1px solid #FFFFFF;
+        border-radius: 100px;
+        background: none;
+        color: white;
+        margin: 16px;
+    }
+}
+
+#banner {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    gap: 32px;
+    background: rgba(255, 255, 255, 0.12);
+    width: 120%;
+    height: 62px;
+    rotate: 357deg;
+        >span {
+            font-size: 32px;
+            color: rgba(61, 207, 182, 1);
+            gap: 24px;
+        }
+}
