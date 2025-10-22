@@ -1,0 +1,52 @@
+#featured_projects {
+    background-color: rgba(28, 28, 28, 1);
+    color: white;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(61, 207, 182, 1);
+}
+
+h2 {
+    font-family: 'Fira Code';
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(61, 207, 182, 1);
+}
+
+#projects {
+    margin-top: 24px;
+}
+
+.button_projects {
+    width: 900px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: rgba(61, 207, 182, 1);
+    cursor: pointer;
+        &:hover {
+            background: linear-gradient(to right, rgba(61, 207, 182, 0.4), rgba(0, 0, 0, 0));
+        }
+        &:first-child {
+            border-top: 1px solid rgba(61, 207, 182, 1);
+    }
+}
+
+.project_name {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 700;
+}
