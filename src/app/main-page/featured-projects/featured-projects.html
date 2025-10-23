@@ -5,23 +5,23 @@
         <p>Explore a selection of my work here - Interact with <br>
             projects to see my skills in action</p>
     </div>
-    <div>
+    <div id="project_interactiv">
         <div id="projects">
-            <button class="button_projects">
+            <button class="button_projects" (mouseover)="showImage(projectImages[0])" (mouseleave)="clearImage()">
                 <span class="project_name">Join</span>
                 <span>Angular | TypeScript | HTML | CSS | Firebase</span>
             </button>
-            <button class="button_projects">
+            <button class="button_projects" (mouseover)="showImage(projectImages[1])" (mouseleave)="clearImage()">
                 <span class="project_name">Sharkie</span>
                 <span>HTML | CSS | JavaScript</span>
             </button>
-            <button class="button_projects">
+            <button class="button_projects" (mouseover)="showImage(projectImages[2])" (mouseleave)="clearImage()">
                 <span class="project_name">Pokedex</span>
                 <span>HTML | CSS | JavaScript</span>
             </button>
         </div>
-        <div id="project-window">
-            
+        <div id="project_window">
+            <img [src]="currentImage" alt="currentImage">
         </div>
     </div>
 </div>

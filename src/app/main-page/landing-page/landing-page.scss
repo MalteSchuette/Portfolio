@@ -16,6 +16,7 @@
 #header {
     position: absolute;
     inset: 0;
+    height: 120px;
 }
 
 #name_title {
@@ -34,17 +35,20 @@
         }
 }
 
-.link_buttons {
-    >button {
-        width: 172px;
-        height: 48px;
-        border: 1px solid #FFFFFF;
-        border-radius: 100px;
-        background: none;
-        color: white;
-        margin: 16px;
+button {
+    width: 172px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    background: none;
+    color: white;
+    margin: 16px;
+    cursor: pointer;
+    &:hover {
+        scale: 1,1;
     }
 }
+
 
 #banner {
     height: 32px;

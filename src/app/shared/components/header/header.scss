@@ -19,3 +19,28 @@
         border: none;
     }
 }
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: color 0.2s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 6px;
+    height: 6px;
+    background-color: #00c7b7;
+    border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  &:hover::after {
+    transform: translateX(-50%) scale(1);
+  }
+}

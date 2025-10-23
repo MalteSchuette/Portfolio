@@ -50,3 +50,14 @@ h2 {
     font-size: 24px;
     font-weight: 700;
 }
+
+#project_interactiv {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+#project_window img{
+    height: 320px;
+    border-radius: 16px;
+}

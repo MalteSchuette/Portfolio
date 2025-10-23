@@ -1,0 +1,85 @@
+#contact_div {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    background-color: rgba(28, 28, 28, 1);
+    gap: 64px;
+
+}
+
+form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        >label {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-top: 1px solid rgba(61, 207, 182, 1);
+            font-family: 'Fira Code';
+            font-size: 24px;
+            color: rgba(61, 207, 182, 1);
+        }
+        >input {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin: 16px;
+        }
+
+        >textarea {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin: 16px;
+        }
+        >button {
+            width: 172px;
+            height: 48px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100px;
+            background: none;
+            color: white;
+            margin: 32px;
+            align-self: center;
+        }
+    }
+
+#privacy_checkbox {
+    display: flex;
+    gap: 16px;
+    >p {
+        color: white;
+    }
+}
+
+#contact_info {
+    flex: 1;
+        >h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(61, 207, 182, 1);
+        }
+        >h2 {
+            font-family: 'Fira Code';
+            font-size: 64px;
+            font-weight: 700;
+            color: rgba(61, 207, 182, 1);
+        }
+        >p {
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+#special_span {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(61, 207, 182, 1);
+}
