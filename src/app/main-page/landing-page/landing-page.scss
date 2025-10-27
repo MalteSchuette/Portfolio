@@ -1,7 +1,6 @@
 .landing_page {
     width: 100%;
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,19 +50,123 @@ button {
 
 
 #banner {
-    height: 32px;
+    width: 120%;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
+    z-index: 20;
     gap: 32px;
-    background: rgba(255, 255, 255, 0.12);
-    width: 120%;
-    height: 62px;
+    background: rgba(105, 103, 103, 0.4);
     rotate: 357deg;
-        >span {
-            font-size: 32px;
-            color: rgba(61, 207, 182, 1);
-            gap: 24px;
-        }
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(4px);
 }
+
+#info {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#info_content {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    >span {
+        display: inline-block;
+        margin-right: 16px;
+        font-size: 32px;
+        color: rgba(61, 207, 182, 1);;
+    }
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+#decoration_landing {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+#right_decoration {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+.link_icons {
+    width: 48px;
+
+}
+
+#mail_adress {
+    display: inline-block;
+    rotate: 270deg;
+    transform-origin: left top;
+    position: relative;
+    left: 147px;
+    font-size: 24px;
+}
+
+#right_line {
+    width: 1px;
+    border: 1px solid white;
+    height: 200px;
+}
+
+#left_decoration {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    >div {
+        width: 35px;
+        height: 72px;
+        border: 1px solid red;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img {
+            animation: floatArrow 2s ease-in-out infinite;
+            
+            @keyframes floatArrow {
+                0%, 100% {
+                    transform: translateY(-10px)
+                }
+                50% {
+                    transform:translateY(-20px);
+                }
+            }
+        }
+    }
+}
+
+#left_line {
+    width: 1px;
+    border: 1px solid rgba(61, 207, 182, 1);
+    height: 400px;
+}
+
