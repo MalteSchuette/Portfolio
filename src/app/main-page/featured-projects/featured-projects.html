@@ -7,21 +7,129 @@
     </div>
     <div id="project_interactiv">
         <div id="projects">
-            <button class="button_projects" (mouseover)="showImage(projectImages[0])" (mouseleave)="clearImage()">
+            <button class="button_projects" (click)="toggleOverlay(1)" (mouseover)="showImage(projectImages[0])" (mouseleave)="clearImage()">
                 <span class="project_name">Join</span>
                 <span>Angular | TypeScript | HTML | CSS | Firebase</span>
             </button>
-            <button class="button_projects" (mouseover)="showImage(projectImages[1])" (mouseleave)="clearImage()">
+            <button class="button_projects" (click)="toggleOverlay(2)" (mouseover)="showImage(projectImages[1])" (mouseleave)="clearImage()">
                 <span class="project_name">Sharkie</span>
                 <span>HTML | CSS | JavaScript</span>
             </button>
-            <button class="button_projects" (mouseover)="showImage(projectImages[2])" (mouseleave)="clearImage()">
+            <button class="button_projects" (click)="toggleOverlay(3)" (mouseover)="showImage(projectImages[2])" (mouseleave)="clearImage()">
                 <span class="project_name">Pokedex</span>
                 <span>HTML | CSS | JavaScript</span>
             </button>
         </div>
         <div id="project_window">
-            <img [src]="currentImage" alt="currentImage">
+            <img [src]="currentImage" alt="">
+        </div>
+    </div>
+    <div id="overlay" [class.active]="showOverlay" (click)="toggleOverlay(0)">
+        <div id="overlay_window" (click)="$event.stopPropagation()">
+            @switch (modi) {
+                @case (1) {
+                    <div id="overlay_info">
+                        <h1>01</h1>
+                        <h2>Join</h2>
+                        <h3>What is this project about?</h3>
+                        <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                        <div id="project_icons">
+                            <div>
+                                <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                <span>HTML</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                <span>CSS</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_fb_icon.svg" alt="Firebase Icon">
+                                <span>Firebase</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_angular_icon.svg" alt="Angular Icon">
+                                <span>Angular</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_ts_icon.svg" alt="TypeScript Icon">
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                        <div id="links_button">
+                            <a href="https://github.com/MalteSchuette" target="_blank"><button>Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <a href=""><button>Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                    <div id="overlay_img">
+                        <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <img src="./assets/img/Join1x.webp" alt="">
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
+                    </div>
+                }
+                @case (2) {
+                    <div id="overlay_info">
+                        <h1>02</h1>
+                        <h2>Sharkie</h2>
+                        <h3>What is this project about?</h3>
+                        <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                        <div id="project_icons">
+                            <div>
+                                <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
+                                <span>JavaScript</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                <span>HTML</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                <span>CSS</span>
+                            </div>                           
+                        </div>
+                        <div id="links_button">
+                            <a href="https://github.com/MalteSchuette/13_Sharkie" target="_blank"><button>Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <a href="https://malte-schuette.developerakademie.net/12_Sharkie/index.html" target="_blank"><button>Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                    <div id="overlay_img">
+                        <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <img src="./assets/img/Sharkie.png" alt="">
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
+                    </div>
+                }
+                @case (3) {
+                    <div id="overlay_info">
+                        <h1>03</h1>
+                        <h2>Pokedex</h2>
+                        <h3>What is this project about?</h3>
+                        <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                        <div id="project_icons">
+                            <div>
+                                <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
+                                <span>JavaScript</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                <span>HTML</span>
+                            </div>
+                            <div>
+                                <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                <span>CSS</span>
+                            </div>                                                        
+                        </div>
+                        <div id="links_button">
+                            <a href="https://github.com/MalteSchuette/11_Pokedex" target="_blank"><button>Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <a href="https://malte-schuette.developerakademie.net/11_pokedex/index.html"><button>Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                        </div>
+                    </div>
+                    <div id="overlay_img">
+                        <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <img src="./assets/img/pokedex.png" alt="">
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
+                    </div>
+                }
+            }
+            
         </div>
     </div>
 </div>

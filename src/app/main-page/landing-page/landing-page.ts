@@ -17,6 +17,14 @@ spans: string[] = [
     'Based in Berlin',
     '·',
     'Open to relocate',
+    '·',
+    'Available for remote work',
+    '·',
+    'Full Stack Developer',
+    '·',
+    'Based in Berlin',
+    '·',
+    'Open to relocate',
     '·'
 ]
 

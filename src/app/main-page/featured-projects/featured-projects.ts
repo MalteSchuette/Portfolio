@@ -15,6 +15,9 @@ export class FeaturedProjects {
     './assets/img/pokedex.png'
   ]
 
+  showOverlay:boolean = false;
+  modi:number = 0;
+
   showImage(image: string) {
     this.currentImage = image;
   }
@@ -23,4 +26,16 @@ export class FeaturedProjects {
     this.currentImage = null;
   }
 
+  toggleOverlay(modi:number) {
+    this.showOverlay = !this.showOverlay
+    this.modi = modi;
+  }
+
+  nextProject() {
+    if(this.modi < 3) {
+      this.modi++
+    } else {
+      this.modi = 1
+    }
+  }
 }

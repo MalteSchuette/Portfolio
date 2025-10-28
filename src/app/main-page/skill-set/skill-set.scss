@@ -3,6 +3,11 @@
     padding-right: 96px;
     padding-top: 48px;
     padding-bottom: 48px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     background: linear-gradient(to bottom left, #1C1C1C 40%, #08463B);
 }
 
@@ -48,14 +53,16 @@ span {
 }
 
 #skill_windows {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
 }
 
 #skill_icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 32px;
   justify-items: center;
   align-items: center; 
 

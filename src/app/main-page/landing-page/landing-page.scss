@@ -44,7 +44,7 @@ button {
     margin: 16px;
     cursor: pointer;
     &:hover {
-        scale: 1,1;
+        scale: 1.1;
     }
 }
 
@@ -87,7 +87,7 @@ button {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(50%);
   }
   100% {
     transform: translateX(-50%);
