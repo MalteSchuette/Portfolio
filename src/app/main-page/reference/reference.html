@@ -1,21 +1,39 @@
  <div id="reference_div">
     <h2>What my colleagues say about me</h2>
     <div id="reference_cards">
-       @for (reference of references; track $index) {
-        <div class="single_card">
-            <p>{{reference.comment}}</p>
-            <div class="reference_person">
-                <div class="decoration"></div>
-                <p>{{reference.name}}</p>
-            </div>
+       @for (reference of visibleReferences(); track $index; let i = $index) {
+      <div
+        class="single_card"
+        [class.active]="i === 1"
+        [class.left]="i === 0"
+        [class.right]="i === 2"
+      >
+        <p id="special_p">{{ reference.comment }}</p>
+        <div class="reference_person">
+          <div class="decoration"></div>
+          <p>{{ reference.name }}</p>
         </div>
-        }
+      </div>
+    }
     </div>
     <div id="ref_nav">
-        <button class="nav_buttons"><img src="./assets/icons/Arrow_left_references.svg" alt=""></button>
-        @for (reference of references; track $index; let index = $index) {
-            <button id="{{index}}_button" class="nav_buttons"><img src="./assets/icons/Ellipse 3.svg" alt=""></button>
-        }
-        <button class="nav_buttons"><img src="./assets/icons/Arrow_right_references.svg" alt=""></button>
-    </div>
+    <button class="nav_buttons" (click)="prev()">
+      <img src="./assets/icons/Arrow_left_references.svg" alt="previous">
+    </button>
+
+    @for (reference of references; track $index; let i = $index) {
+      <button
+        class="nav_buttons"
+        [class.active_nav]="i === activeIndex"
+        (click)="activeIndex = i"
+      >
+        <img src="./assets/icons/Ellipse 3.svg" alt="dot">
+      </button>
+    }
+
+    <button class="nav_buttons" (click)="next()">
+      <img src="./assets/icons/Arrow_right_references.svg" alt="next">
+    </button>
+  </div>
 </div>
+

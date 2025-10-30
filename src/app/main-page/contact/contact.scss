@@ -23,7 +23,7 @@ form {
             font-size: 24px;
             color: rgba(61, 207, 182, 1);
         }
-        >input {
+        >input[type=text], [type=email] {
             background: none;
             border: none;
             color: white;
@@ -49,6 +49,17 @@ form {
             align-self: center;
         }
     }
+
+#submit_button {
+    width: 172px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    background: none;
+    color: white;
+    margin: 32px;
+    align-self: center;
+}
 
 #privacy_checkbox {
     display: flex;
