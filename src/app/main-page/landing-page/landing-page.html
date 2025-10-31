@@ -1,37 +1,39 @@
-<div class="landing_page">
-    <app-header id="header"></app-header>
-    <div id="name_title">
-        <p>Full Stack Developer</p>
-        <h1>Malte Schütte</h1>
-        <div class="link_buttons">
-            <a href="#featured_projects"><button>Check my work</button></a>
-            <a href="#contact_div"><button>Contact me</button></a>
-        </div>
-    </div>
-    <div id="banner">
-        <div id="info">
-            <div id="info_content">
-            @for (span of spans; track $index) {
-                <span>{{span}}</span>
-            }
-            @for (span of spans; track $index) {
-                <span>{{span}}</span>
-            }
+<div id="background_div">
+    <div class="landing_page">
+        <app-header id="header"></app-header>
+        <div id="name_title">
+            <p> {{'job_title | translate'}}</p>
+            <h1>Malte Schütte</h1>
+            <div class="link_buttons">
+                <a href="#featured_projects"><button>Check my work</button></a>
+                <a href="#contact_div"><button>Contact me</button></a>
             </div>
         </div>
-    </div>
-    <div id="decoration_landing">
-        <div id="left_decoration">
-            <div>
-                <img id="arrow_landing" src="./assets/icons/Arrow_down_landing.svg" alt="Icon of Arrow">
+        <div id="banner">
+            <div id="info">
+                <div id="info_content">
+                @for (span of spans; track $index) {
+                    <span>{{span}}</span>
+                }
+                @for (span of spans; track $index) {
+                    <span>{{span}}</span>
+                }
+                </div>
             </div>
-            <hr id="left_line">
         </div>
-        <div id="right_decoration">
-            <span id="mail_adress">malte.schuette92@gmail.com</span>
-            <a href="https://github.com/MalteSchuette" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/github_landing.svg" alt="Github Icon"></a>
-            <a href="https://www.linkedin.com/in/malte-sch%C3%BCtte/" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/linkedIn_landing.svg" alt="LinkedIn Icon"></a>
-            <hr id="right_line">
+        <div id="decoration_landing">
+            <div id="left_decoration">
+                <div>
+                    <img id="arrow_landing" src="./assets/icons/Arrow_down_landing.svg" alt="Icon of Arrow">
+                </div>
+                <hr id="left_line">
+            </div>
+            <div id="right_decoration">
+                <span id="mail_adress">malte.schuette92@gmail.com</span>
+                <a href="https://github.com/MalteSchuette" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/github_landing.svg" alt="Github Icon"></a>
+                <a href="https://www.linkedin.com/in/malte-sch%C3%BCtte/" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/linkedIn_landing.svg" alt="LinkedIn Icon"></a>
+                <hr id="right_line">
+            </div>
         </div>
     </div>
 </div>

@@ -1,9 +1,16 @@
+#background {
+    width: 100%;
+    background-color: rgba(28, 28, 28, 1);
+    display: flex;
+    justify-content: center;
+}
+
 #contact_div {
-    width: 100%; 
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     justify-content: center;
     padding: 32px;
-    background-color: rgba(28, 28, 28, 1);
     gap: 64px;
 
 }
@@ -69,6 +76,15 @@ form {
     }
 }
 
+.error_msg {
+    color: red;
+}
+
+#pp_link {
+    color: rgba(61, 207, 182, 1);
+    text-decoration: none;
+}
+
 #contact_info {
     flex: 1;
         >h3 {
@@ -81,10 +97,12 @@ form {
             font-size: 64px;
             font-weight: 700;
             color: rgba(61, 207, 182, 1);
+            margin: 20px 0;
         }
         >p {
             color: white;
             font-size: 16px;
+            margin-top: 24px;
         }
     }
 
@@ -93,4 +111,5 @@ form {
     font-size: 24px;
     font-weight: 700;
     color: rgba(61, 207, 182, 1);
+
 }

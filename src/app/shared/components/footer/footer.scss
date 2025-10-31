@@ -1,10 +1,17 @@
 footer {
+    background-color: rgba(28, 28, 28, 1);
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_content {
     width: 100%;
+    max-width: 1920px;
     height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(28, 28, 28, 1);
     padding: 32px;
         >p {
             font-family: 'Fira Code';

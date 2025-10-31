@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
+import {TranslatePipe, TranslateDirective, TranslateService} from '@ngx-translate/core';
 import { RouterOutlet } from '@angular/router';
 import { MainPage } from './main-page/main-page';
 
@@ -10,4 +11,9 @@ import { MainPage } from './main-page/main-page';
 })
 export class App {
   protected readonly title = signal('Portfolio');
+  private translate = inject(TranslateService);
+
+  useLanguage(language: string): void {
+      this.translate.use(language);
+  }
 }

@@ -8,7 +8,9 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(to bottom left, #1C1C1C 40%, #08463B);
+    // background: linear-gradient(to left,  80%, #08463b);
+    background: radial-gradient(circle 450px at left center, #08463b, #1C1C1C 70%);
+    
 }
 
 h3 {
