@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Header } from '../../shared/components/header/header';
-import { TranslateDirective, TranslatePipe } from '@ngx-translate/core';
+import {TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [Header, TranslatePipe, TranslateDirective],
+  imports: [Header, TranslatePipe,],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss'
 })

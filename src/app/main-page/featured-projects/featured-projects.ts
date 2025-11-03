@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-featured-projects',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './featured-projects.html',
   styleUrl: './featured-projects.scss'
 })

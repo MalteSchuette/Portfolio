@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-reference',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './reference.html',
   styleUrl: './reference.scss'
 })

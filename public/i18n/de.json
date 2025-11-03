@@ -1,5 +1,37 @@
 {
         "landingPage": {
-            "job_title": "Full Stack Entwickler"
+            "job_title": "Full Stack Entwickler",
+            "check_work": "Meine Projekte ansehen",
+            "contact_me": "Kontakt"
+        },
+
+        "aboutMe": {
+            "about_me": "Kurzes Intro",
+            "short_intro": " Über mich",
+            "intro": "Ich liebe es, aus Ideen greifbare Lösungen zu schaffen. Die IT gibt mir die Möglichkeit, Kreativität und technisches Wissen zu verbinden. Probleme zu lösen und Innovationen umzusetzen treibt mich an – genau das fasziniert mich an der Welt des Programmierens.",
+            "location": "Mit Wohnsitz in Woltersdorf bei Berlin stehe ich sowohl für Remote-Arbeit als auch für Tätigkeiten vor Ort zur Verfügung.",
+            "new_skills": "Ich lerne sehr gerne neue Technologien, da mir jede neue Fähigkeit neue Lösungswege eröffnet und es mir ermöglicht, Projekte effizienter anzugehen.",
+            "problem_solving": "Ich betrachte zuerst das große Ganze, setze Prioritäten und nutze bewährte Methoden. Bei komplexen Problemen sorge ich parallel mit Plan-B-Lösungen für Fortschritt, arbeite flexibel allein oder im Team und lerne aus jeder Aufgabe, um effizientere Lösungen zu finden."
+        },
+
+        "skillSet": {
+            "headline": "Fachkenntnisse",
+            "skills_text": "Ich verfüge über fundierte Kenntnisse in der Frontend-Entwicklung mit HTML, CSS und JavaScript sowie im modernen Material Design. Zusätzlich beherrsche ich TypeScript, Angular und die Arbeit mit Git sowie REST-APIs. Darüber hinaus bringe ich Erfahrung in agilen Methoden wie Scrum mit und lege großen Wert auf kontinuierliches Lernen und ein Growth Mindset, um mich stetig weiterzuentwickeln und neue Technologien schnell zu adaptieren.",
+            "missing": "Fehlt ein ",
+            "skill": "Skill?",
+            "skill_contact_me": "Ich habe hier bewusst nur die Bereiche aufgeführt, in denen ich wirklich sattelfest bin. Mit neuen Tools habe ich keine Berührungsängste – ich probiere viel privat aus und erweitere meinen Stack laufend."
+        },
+
+        "projects": {
+            "featured": "Ausgewählte Projekte",
+            "explore": "Schau dich gern um. Hier bekommst du am besten ein Gefühl dafür, wie ich arbeite.",
+            "what_about": "Worum geht es in diesem Projekt?",
+            "join_explain": "Ein Task-Manager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben per Drag & Drop – und ordne ihnen Nutzer und Kategorien zu.",
+            "sharkie_explain": "Ein 2D-Spiel rund um den kleinen Hai Sharkie. Du steuerst ihn durch die Unterwasserwelt und besiegst seine Gegner. Das Projekt zeigt objektorientierte Programmierung in Aktion – vom Verhalten der Figuren bis zur Spielmechanik.",
+            "third_project": "Placeholder für was auch immer hier reinkommt"
+        },
+
+        "references": {
+            "references": "Was andere über mich sagen"
         }
 }
