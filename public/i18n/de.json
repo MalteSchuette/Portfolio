@@ -33,5 +33,31 @@
 
         "references": {
             "references": "Was andere über mich sagen"
+        },
+
+        "contact": {
+            "contact_me": "Mein Kontakt",
+            "work_together": "Lass uns zusammen arbeiten",
+            "problem_solve": "Gibts ein Problem zu lösen?",
+            "why_me": "Ich freue mich über jede Kontaktaufnahme – ganz egal ob du jemanden für ein Projekt, eine Rolle oder nur zum Sparring suchst. Sag mir einfach kurz, in welchem Bereich du Unterstützung brauchst und welche Rolle dir vorschwebt. Mir geht es darum, echte Business-Value zu erzeugen und Projekte schneller in Richtung ",
+            "project_aim": " „funktioniert, bringt Nutzen, kann skaliert werden“",
+            "write_me": " zu bringen. Falls du jemanden suchst, der mitdenkt und Verantwortung übernimmt: melde dich gerne!"
+        },
+
+        "form": {
+            "form_name": "Wie ist dein Name?",
+            "form_name_ph": "Hier könnte ihr Name stehen",
+            "form_mail_ph": "deineMail@email.gg",
+            "form_message": "Wie kann ich dir helfen?",
+            "form_message_ph": "Hey Malte, ich brauche deine Hilfe für...",
+            "form_checkbox": "Ich habe die",
+            "form_pp": "Datenschutzerklärung",
+            "form_confirm": " gelesen und stimme der Verarbeitung meiner Daten entsprechend den dort beschriebenen Bedingungen zu.",
+            "say_hello": "Abschicken"
+        },
+
+        "header": {
+            "about_me": "Intro",
+            "projects": "Projekte"
         }
 }

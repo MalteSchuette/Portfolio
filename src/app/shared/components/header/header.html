@@ -1,11 +1,13 @@
 <div class="max_width_1920">
     <div class="header_div">
         <div id="nav_links">
-            <button (click)="useLanguage('de')"> DE</button>
-            <button (click)="useLanguage('en')"> EN</button>
-            <a href="#about_me">About me</a>
+            <div id="lang_btn">
+                <button [class.active]="currentLang === 'en'" (click)="useLanguage('en')"> EN </button>
+                <button [class.active]="currentLang === 'de'" (click)="useLanguage('de')">DE</button>
+            </div>            
+            <a href="#about_me">{{'header.about_me' | translate}}</a>
             <a href="#technologies_div">Skills</a>
-            <a href="#featured_projects">Projects</a>
+            <a href="#featured_projects">{{'header.projects' | translate}}</a>
         </div>
         <p>>>Malte <br> Schütte</p>
     </div>

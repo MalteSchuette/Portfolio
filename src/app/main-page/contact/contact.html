@@ -1,25 +1,27 @@
 <div id="background">
     <div id="contact_div">
         <div id="contact_info">
-            <h3>Contact me</h3>
-            <h2>Let's work <br>together</h2>
-            <span id="special_span">Got a problem to solve?</span>
-            <p>Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! Talk to me! </p>
+            <h3>{{'contact.contact_me' | translate}}</h3>
+            <h2>{{'contact.work_together' | translate}}</h2>
+            <span id="special_span">{{'contact.problem_solve' | translate}}</span>
+            <p>{{'contact.why_me' | translate}} <br><span id="project_aim">{{'contact.project_aim' | translate}}</span>{{'contact.write_me' | translate}}</p>
+            
+            <p></p>
         </div>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"> 
-            <label for="name">What's your name?</label>
-            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name goes here" required>
+            <label for="name">{{'form.form_name' | translate}}</label>
+            <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{'form.form_name_ph' | translate}}" required>
             <label for="email">E-Mail</label>
-            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="youremail@email.gg" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-            <label for="message">Subject</label> 
-            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" placeholder="Hey Malte, I am interessted in..." required></textarea>
+            <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{'form.form_mail_ph' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <label for="message">{{'form.form_message' | translate}}</label> 
+            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" placeholder="{{'form.form_message_ph' | translate}}" required></textarea>
             @if (!message.valid && message.touched) {
                 <span class="error_msg">Please enter a message</span>
             }
             <div id="privacy_checkbox">
-                <input type="checkbox" required> <p>I've read the  <a id="pp_link" href=""> privacy policy </a> and agree to the processing of my data as outlined.</p>
+                <input type="checkbox" required> <p>{{'form.form_checkbox' | translate}}  <a id="pp_link" href=""> {{'form.form_pp' | translate}} </a> {{'form.form_confirm' | translate}}</p>
             </div>
-            <input id="submit_button" type="submit" value='Say hello ;)'>
+            <input id="submit_button" type="submit" value="{{'form.say_hello' | translate}}">
         </form>
     </div>
 </div>

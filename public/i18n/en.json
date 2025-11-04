@@ -1,5 +1,63 @@
 {
-    "landingPage": {
-            "job_title": "Full Stack Developer"
-        }
+  "landingPage": {
+    "job_title": "Full Stack Developer",
+    "check_work": "View my projects",
+    "contact_me": "Contact"
+  },
+
+  "aboutMe": {
+    "about_me": "Short intro",
+    "short_intro": "About me",
+    "intro": "I love turning ideas into tangible solutions. IT allows me to combine creativity with technical expertise. Solving problems and building something new is what drives me – this is exactly what fascinates me about the world of programming.",
+    "location": "Based in Woltersdorf near Berlin, I am available for both remote and on-site work.",
+    "new_skills": "I enjoy learning new technologies because every new skill opens new ways to solve problems and allows me to approach projects more efficiently.",
+    "problem_solving": "I always start by seeing the big picture, set priorities and apply proven methods. With complex problems I make sure progress continues by preparing plan-B solutions in parallel, work flexibly alone or in a team, and take learnings from every task to find more efficient solutions."
+  },
+
+  "skillSet": {
+    "headline": "Expertise",
+    "skills_text": "I have strong knowledge in frontend development with HTML, CSS and JavaScript as well as modern Material Design. I also work confidently with TypeScript, Angular, Git and REST APIs. On top of that, I have experience with agile methods such as Scrum and put a strong focus on continuous learning and a growth mindset in order to evolve and adopt new technologies quickly.",
+    "missing": "Missing a ",
+    "skill": "skill?",
+    "skill_contact_me": "I deliberately list only areas where I am truly rock solid. I have zero hesitation when it comes to new tools – I experiment a lot on my own and continuously expand my stack."
+  },
+
+  "projects": {
+    "featured": "Featured projects",
+    "explore": "Take a look around. This is the best way to get a feeling for how I build things.",
+    "what_about": "What is this project about?",
+    "join_explain": "A task manager based on the Kanban principle. Create and organize tasks via drag & drop – and assign users and categories.",
+    "sharkie_explain": "A 2D game about the little shark called Sharkie. You guide him through the underwater world and defeat his enemies. This project shows object-oriented programming in action – from character behavior to game mechanics.",
+    "third_project": "Placeholder for whatever gets added here later"
+  },
+
+  "references": {
+    "references": "What others say about me"
+  },
+
+  "contact": {
+    "contact_me": "Contact me",
+    "work_together": "Let's work together",
+    "problem_solve": "Is there a problem to solve?",
+    "why_me": "I appreciate any contact – whether you are looking for someone for a project, a role, or just for sparring. Tell me briefly what kind of support you need and what role you have in mind. My focus is to generate real business value and push projects faster towards",
+    "project_aim": "“it works, it delivers value, it can scale”",
+    "write_me": "If you are looking for someone who thinks ahead and takes ownership: reach out anytime!"
+  },
+
+  "form": {
+    "form_name": "What is your name?",
+    "form_name_ph": "Your name could be here",
+    "form_mail_ph": "yourMail@email.gg",
+    "form_message": "How can I help you?",
+    "form_message_ph": "Hey Malte, I need your help with...",
+    "form_checkbox": "I have read the",
+    "form_pp": "privacy policy",
+    "form_confirm": "and I agree to the processing of my data according to the conditions described there.",
+    "say_hello": "Submit"
+  },
+
+  "header": {
+    "about_me": "Intro",
+    "projects": "Projects"
+  }
 }
