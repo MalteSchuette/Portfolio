@@ -1,7 +1,7 @@
 {
   "landingPage": {
     "job_title": "Full Stack Developer",
-    "check_work": "View my projects",
+    "check_work": "Check my projects",
     "contact_me": "Contact"
   },
 
@@ -19,7 +19,8 @@
     "skills_text": "I have strong knowledge in frontend development with HTML, CSS and JavaScript as well as modern Material Design. I also work confidently with TypeScript, Angular, Git and REST APIs. On top of that, I have experience with agile methods such as Scrum and put a strong focus on continuous learning and a growth mindset in order to evolve and adopt new technologies quickly.",
     "missing": "Missing a ",
     "skill": "skill?",
-    "skill_contact_me": "I deliberately list only areas where I am truly rock solid. I have zero hesitation when it comes to new tools – I experiment a lot on my own and continuously expand my stack."
+    "skill_contact_me": "I deliberately list only areas where I am truly rock solid. I have zero hesitation when it comes to new tools – I experiment a lot on my own and continuously expand my stack.",
+    "lets_talk": "Lets talk!"
   },
 
   "projects": {

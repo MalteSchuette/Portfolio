@@ -29,9 +29,28 @@
                 <hr id="left_line">
             </div>
             <div id="right_decoration">
-                <span id="mail_adress">malte.schuette92@gmail.com</span>
-                <a href="https://github.com/MalteSchuette" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/github_landing.svg" alt="Github Icon"></a>
-                <a href="https://www.linkedin.com/in/malte-sch%C3%BCtte/" target="_blank" rel="noopener noreferrer"><img class="link_icons" src="./assets/icons/linkedIn_landing.svg" alt="LinkedIn Icon"></a>
+                <a href="mailto:malte.schuette92@gmail.com"><span id="mail_adress">malte.schuette92@gmail.com</span></a>
+                <a href="mailto:malte.schuette92@gmail.com">   
+                    <img id="hidden_mail" class="link_icons" 
+                    [src]="mailIsHovered ? './assets/icons/mail_hover.svg' : './assets/icons/mail.svg'" 
+                    (mouseenter)="mailIsHovered = true"
+                    (mouseleave)="mailIsHovered = false"
+                    alt="Mail Icon">
+                </a> 
+                <a href="https://github.com/MalteSchuette" target="_blank" rel="noopener noreferrer">
+                    <img class="link_icons" 
+                        [src]="gitIsHovered ? './assets/icons/github_hover.svg' : './assets/icons/github.svg'" 
+                        (mouseenter)="gitIsHovered = true"
+                        (mouseleave)="gitIsHovered = false"
+                        alt="Github Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/malte-sch%C3%BCtte/" target="_blank" rel="noopener noreferrer">
+                    <img class="link_icons" 
+                        [src]="linkedIsHovered ? './assets/icons/linked_hover.svg' : './assets/icons/linkedIn.svg'" 
+                        (mouseenter)="linkedIsHovered = true"
+                        (mouseleave)="linkedIsHovered = false"
+                        alt="LinkedIn Icon">
+                </a>
                 <hr id="right_line">
             </div>
         </div>

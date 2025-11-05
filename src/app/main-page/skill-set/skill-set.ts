@@ -16,6 +16,7 @@ skillIcons = [
   './assets/icons/MaterialDesign.svg',
   './assets/icons/TypeScript.svg',
   './assets/icons/Angular.svg',
+  './assets/icons/Firebase.svg',
   './assets/icons/GIT.svg',
   './assets/icons/Rest-Api.svg',
   './assets/icons/Scrum.svg',

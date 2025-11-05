@@ -10,23 +10,27 @@ import {TranslatePipe } from '@ngx-translate/core';
 })
 export class LandingPage {
 
-spans: string[] = [
-  'Available for remote work',
-    '·',
-    'Full Stack Developer',
-    '·',
-    'Based in Berlin',
-    '·',
-    'Open to relocate',
-    '·',
+  mailIsHovered = false;
+  gitIsHovered = false;
+  linkedIsHovered =false;
+  
+  spans: string[] = [
     'Available for remote work',
-    '·',
-    'Full Stack Developer',
-    '·',
-    'Based in Berlin',
-    '·',
-    'Open to relocate',
-    '·'
-]
+      '·',
+      'Full Stack Developer',
+      '·',
+      'Based in Berlin',
+      '·',
+      'Open to relocate',
+      '·',
+      'Available for remote work',
+      '·',
+      'Full Stack Developer',
+      '·',
+      'Based in Berlin',
+      '·',
+      'Open to relocate',
+      '·'
+  ]
 
 }

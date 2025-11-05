@@ -1,18 +1,19 @@
 <div id="technologies_div">
     <div id="skill_windows">
-        <div>
-            <h3>{{'skillSet.headline' | translate }}</h3>
+        <h3 id="headline_skills">{{'skillSet.headline' | translate }}</h3>
+        <div id="skill_content">
             <div id="skill_set">
                 <h2>Skill Set</h2>
                 <p>{{'skillSet.skills_text' | translate }}</p>
                 <p id="spec_p">{{'skillSet.missing' | translate }}<span>{{'skillSet.skill' | translate }}</span></p>
                 <p>{{'skillSet.skill_contact_me' | translate }}</p>
+                <button>{{'skillSet.lets_talk' | translate }}</button>
             </div>
-        </div>
-        <div id="skill_icons">
-            @for (icon of skillIcons; track $index) {
-                <img [src]="icon" alt="Icons von Skills">
-            }
+            <div id="skill_icons">
+                @for (icon of skillIcons; track $index) {
+                    <img [src]="icon" alt="Icons von Skills">
+                }
+            </div>
         </div>
     </div>
 </div>

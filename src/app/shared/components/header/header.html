@@ -1,5 +1,6 @@
 <div class="max_width_1920">
     <div class="header_div">
+        <div id="responsive_logo">>></div>
         <div id="nav_links">
             <div id="lang_btn">
                 <button [class.active]="currentLang === 'en'" (click)="useLanguage('en')"> EN </button>
@@ -9,6 +10,20 @@
             <a href="#technologies_div">Skills</a>
             <a href="#featured_projects">{{'header.projects' | translate}}</a>
         </div>
-        <p>>>Malte <br> Schütte</p>
+        <p id="name_tag">>>Malte <br> Schütte</p>
+        <img id="burger_menu" (click)="toggleBurger()"
+            [src]="isHovered ? './assets/icons/burger_menu_hover.svg' : './assets/icons/burger_menu.svg'" 
+            alt="Icon eines Burgermenu"
+            (mouseenter)="isHovered = true"
+            (mouseleave)="isHovered = false">
+    </div>
+    <div id="burger_div" [ngStyle]="{'display': burgerOpen ? 'flex' : 'none'}">
+        <a href="#about_me">{{'header.about_me' | translate}}</a>
+        <a href="#technologies_div">Skills</a>
+        <a href="#featured_projects">{{'header.projects' | translate}}</a>
+        <div id="lang_btn">
+            <button [class.active]="currentLang === 'en'" (click)="useLanguage('en')"> EN </button>
+            <button [class.active]="currentLang === 'de'" (click)="useLanguage('de')">DE</button>
+        </div>    
     </div>
 </div>

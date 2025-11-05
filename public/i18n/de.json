@@ -19,7 +19,8 @@
             "skills_text": "Ich verfüge über fundierte Kenntnisse in der Frontend-Entwicklung mit HTML, CSS und JavaScript sowie im modernen Material Design. Zusätzlich beherrsche ich TypeScript, Angular und die Arbeit mit Git sowie REST-APIs. Darüber hinaus bringe ich Erfahrung in agilen Methoden wie Scrum mit und lege großen Wert auf kontinuierliches Lernen und ein Growth Mindset, um mich stetig weiterzuentwickeln und neue Technologien schnell zu adaptieren.",
             "missing": "Fehlt ein ",
             "skill": "Skill?",
-            "skill_contact_me": "Ich habe hier bewusst nur die Bereiche aufgeführt, in denen ich wirklich sattelfest bin. Mit neuen Tools habe ich keine Berührungsängste – ich probiere viel privat aus und erweitere meinen Stack laufend."
+            "skill_contact_me": "Ich habe hier bewusst nur die Bereiche aufgeführt, in denen ich wirklich sattelfest bin. Mit neuen Tools habe ich keine Berührungsängste – ich probiere viel privat aus und erweitere meinen Stack laufend.",
+            "lets_talk": "Frag gerne nach!"
         },
 
         "projects": {

@@ -11,9 +11,9 @@ export class FeaturedProjects {
   currentImage: string | null = null;
 
   projectImages = [
-    './assets/img/Join1x.webp',
-    './assets/img/Sharkie.png',
-    './assets/img/pokedex.png'
+    './assets/img/Kanban.webp',
+    './assets/img/Sharkie.webp',
+    './assets/img/pokedex.webp'
   ]
 
   showOverlay:boolean = false;

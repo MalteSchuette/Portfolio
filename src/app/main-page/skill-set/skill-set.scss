@@ -2,15 +2,14 @@
     padding-left: 96px;
     padding-right: 96px;
     padding-top: 48px;
-    padding-bottom: 48px;
+
     min-height: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    // background: linear-gradient(to left,  80%, #08463b);
-    background: radial-gradient(circle 450px at left center, #08463b, #1C1C1C 70%);
-    
+    background: radial-gradient(circle 450px at left center, #08463b, #1C1C1C 70%); 
 }
 
 h3 {
@@ -35,7 +34,6 @@ p {
 span {
     font-family: 'Fira Code';
     color: rgba(61, 207, 182, 1);
-
 }
 
 #skill_set{
@@ -55,27 +53,102 @@ span {
 }
 
 #skill_windows {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#skill_content {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 80px;
 }
 
 #skill_icons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  justify-items: center;
-  align-items: center; 
-
-  img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: scale(1.1);
+    width: 568px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    justify-items: center;
+    align-items: center; 
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: transform 0.2s ease;
+        &:hover {
+        transform: scale(1.1);
+        }
     }
-  }
+}
+
+button {
+    width: 172px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    background: none;
+    color: white;
+    margin: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+@media (max-width: 1250px) {
+    #skill_content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #headline_skills {
+        display: none;
+    }
+
+}
+
+@media (max-width: 620px) {
+    #skill_content {
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #spec_p {
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    #skill_icons {
+        width: 400px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #skill_set{
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    #skill_icons {
+        width: 300px;
+        >img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    #skill_set{
+        width: 300px;
+    }
 }
