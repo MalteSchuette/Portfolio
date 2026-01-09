@@ -116,3 +116,52 @@ h2 {
 #special_p {
     min-height: 150px;
 }
+
+@media (max-width: 1250px) {
+  .single_card {
+    flex: 0 0 450px;
+  }
+}
+
+@media (max-width: 950px) {
+  .single_card {
+    flex: 0 0 320px;
+  }
+
+  #reference_cards::before,
+  #reference_cards::after {
+  content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 3;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 640px) {
+  #reference_cards::before,
+  #reference_cards::after {
+    display: none;
+  }
+
+  .single_card.left {
+    display: none;
+  }
+
+.single_card.right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 32px;
+    padding-left: 16px;
+  }
+
+  .single_card {
+    flex: 0 0 290px;
+  }
+}

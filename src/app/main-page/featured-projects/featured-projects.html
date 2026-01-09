@@ -28,108 +28,114 @@
             <div id="overlay_window" (click)="$event.stopPropagation()">
                 @switch (modi) {
                     @case (1) {
-                        <div id="overlay_info">
-                            <h1>01</h1>
-                            <h2>Join</h2>
-                            <h3>{{'projects.what_about' | translate}}</h3>
-                            <p>{{'projects.join_explain' | translate}}</p>
-                            <div id="project_icons">
-                                <div>
-                                    <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
-                                    <span>HTML</span>
+                        <button class="close_button" (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <div id="overlay_content_sides">
+                            <div id="overlay_info">
+                                <h1>01</h1>
+                                <h2>Join</h2>
+                                <h3>{{'projects.what_about' | translate}}</h3>
+                                <p>{{'projects.join_explain' | translate}}</p>
+                                <div id="project_icons">
+                                    <div>
+                                        <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_fb_icon.svg" alt="Firebase Icon">
+                                        <span>Firebase</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_angular_icon.svg" alt="Angular Icon">
+                                        <span>Angular</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_ts_icon.svg" alt="TypeScript Icon">
+                                        <span>TypeScript</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
-                                    <span>CSS</span>
-                                </div>
-                                <div>
-                                    <img src="./assets/icons/ov_fb_icon.svg" alt="Firebase Icon">
-                                    <span>Firebase</span>
-                                </div>
-                                <div>
-                                    <img src="./assets/icons/ov_angular_icon.svg" alt="Angular Icon">
-                                    <span>Angular</span>
-                                </div>
-                                <div>
-                                    <img src="./assets/icons/ov_ts_icon.svg" alt="TypeScript Icon">
-                                    <span>TypeScript</span>
+                                <div id="links_button">
+                                    <a href="https://github.com/MalteSchuette" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                    <a href="" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
                                 </div>
                             </div>
-                            <div id="links_button">
-                                <a href="https://github.com/MalteSchuette" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
-                                <a href="" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <div id="overlay_img">
+                                <img src='./assets/img/Kanban.webp' alt="">
                             </div>
                         </div>
-                        <div id="overlay_img">
-                            <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
-                            <img src="./assets/img/join.png" alt="">
-                            <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
-                        </div>
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
                     }
                     @case (2) {
-                        <div id="overlay_info">
-                            <h1>02</h1>
-                            <h2>Sharkie</h2>
-                            <h3>{{'projects.what_about' | translate}}</h3>
-                            <p>{{'projects.sharkie_explain' | translate}}</p>
-                            <div id="project_icons">
-                                <div>
-                                    <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
-                                    <span>JavaScript</span>
+                        <button class="close_button" (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <div id="overlay_content_sides">
+                            <div id="overlay_info">
+                                <h1>02</h1>
+                                <h2>Sharkie</h2>
+                                <h3>{{'projects.what_about' | translate}}</h3>
+                                <p>{{'projects.sharkie_explain' | translate}}</p>
+                                <div id="project_icons">
+                                    <div>
+                                        <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                        <span>CSS</span>
+                                    </div>                           
                                 </div>
-                                <div>
-                                    <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
-                                    <span>HTML</span>
+                                <div >
+                                    <a href="https://github.com/MalteSchuette/13_Sharkie" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                    <a href="https://malte-schuette.developerakademie.net/12_Sharkie/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
                                 </div>
-                                <div>
-                                    <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
-                                    <span>CSS</span>
-                                </div>                           
                             </div>
-                            <div >
-                                <a href="https://github.com/MalteSchuette/13_Sharkie" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
-                                <a href="https://malte-schuette.developerakademie.net/12_Sharkie/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <div id="overlay_img">
+                                <img src='./assets/img/Sharkie.webp' alt="">
                             </div>
                         </div>
-                        <div id="overlay_img">
-                            <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
-                            <img src="./assets/img/Sharkie.png" alt="">
-                            <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
-                        </div>
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
+
                     }
                     @case (3) {
-                        <div id="overlay_info">
-                            <h1>03</h1>
-                            <h2>Pokedex</h2>
-                            <h3>{{'projects.what_about' | translate}}</h3>
-                            <p>{{'projects.third_project' | translate}}</p>
-                            <div id="project_icons">
-                                <div>
-                                    <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
-                                    <span>JavaScript</span>
+                        <button class="close_button" (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
+                        <div id="overlay_content_sides">
+                            <div id="overlay_info">
+                                <h1>03</h1>
+                                <h2>Pokedex</h2>
+                                <h3>{{'projects.what_about' | translate}}</h3>
+                                <p>{{'projects.join_explain' | translate}}</p>
+                                <div id="project_icons">
+                                    <div>
+                                        <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
+                                        <span>CSS</span>
+                                    </div>                                                        
                                 </div>
-                                <div>
-                                    <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
-                                    <span>HTML</span>
+                                <div id="links_button">
+                                    <a href="https://github.com/MalteSchuette/11_Pokedex" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                    <a href="https://malte-schuette.developerakademie.net/11_pokedex/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
                                 </div>
-                                <div>
-                                    <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
-                                    <span>CSS</span>
-                                </div>                                                        
                             </div>
-                            <div id="links_button">
-                                <a href="https://github.com/MalteSchuette/11_Pokedex" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
-                                <a href="https://malte-schuette.developerakademie.net/11_pokedex/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                            <div id="overlay_img">
+                                <img src='./assets/img/pokedex.webp' alt="">
                             </div>
                         </div>
-                        <div id="overlay_img">
-                            <button (click)="toggleOverlay(0)"><img src="./assets/icons/close_small.svg" alt=""></button>
-                            <img src="./assets/img/pokedex.jpg" alt="">
-                            <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
-                        </div>
+                        <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>
                     }
                 }
-                
             </div>
         </div>
     </div>

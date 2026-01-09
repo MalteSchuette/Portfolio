@@ -9,7 +9,7 @@ import { Footer } from '../shared/components/footer/footer';
 
 @Component({
   selector: 'app-main-page',
-  imports: [LandingPage, AboutMe, SkillSet, FeaturedProjects, Reference, Contact, Footer],
+  imports: [LandingPage, AboutMe, SkillSet, FeaturedProjects, Reference, Contact,],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss'
 })

@@ -1,12 +1,9 @@
 <div id="background">
     <div id="contact_div">
         <div id="contact_info">
-            <h3>{{'contact.contact_me' | translate}}</h3>
             <h2>{{'contact.work_together' | translate}}</h2>
             <span id="special_span">{{'contact.problem_solve' | translate}}</span>
-            <p>{{'contact.why_me' | translate}} <br><span id="project_aim">{{'contact.project_aim' | translate}}</span>{{'contact.write_me' | translate}}</p>
-            
-            <p></p>
+            <p>{{'contact.why_me' | translate}} <br><span id="project_aim">{{'contact.project_aim' | translate}}</span><br>{{'contact.write_me' | translate}}</p>
         </div>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"> 
             <label for="name">{{'form.form_name' | translate}}</label>
@@ -21,7 +18,9 @@
             <div id="privacy_checkbox">
                 <input type="checkbox" required> <p>{{'form.form_checkbox' | translate}}  <a id="pp_link" href=""> {{'form.form_pp' | translate}} </a> {{'form.form_confirm' | translate}}</p>
             </div>
-            <input id="submit_button" type="submit" value="{{'form.say_hello' | translate}}">
+            <div class="submit_button_div">
+                <input id="submit_button" type="submit" value="{{'form.say_hello' | translate}}">
+            </div>    
         </form>
     </div>
 </div>

@@ -12,6 +12,8 @@
     background: radial-gradient(circle 450px at left center, #08463b, #1C1C1C 70%); 
 }
 
+
+
 h3 {
     color: rgba(61, 207, 182, 1);
     margin-bottom: 16px;
@@ -83,19 +85,63 @@ span {
     }
 }
 
-button {
-    width: 172px;
-    height: 48px;
-    border: 1px solid #FFFFFF;
-    border-radius: 100px;
-    background: none;
+
+#lets_talk {
+    position: relative;
+    width: 174px;
+    height: 50px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     color: white;
-    margin: 16px;
     font-size: 16px;
-    cursor: pointer;
     &:hover {
         scale: 1.1;
     }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#lets_talk::after, #lets_talk::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: conic-gradient(from var(--angle), transparent 40%, rgba(61, 207, 182, 1));
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle:360deg;
+    }
+}
+
+#lets_talk::before {
+    filter: blur(1.5rem)
+    opacity(0.5)
+}
+
+#lets_talk button{
+    width: 172px;
+    height: 48px;
+    background: linear-gradient(to top right, #1C1C1C 40%, #08463B);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 @media (max-width: 1250px) {

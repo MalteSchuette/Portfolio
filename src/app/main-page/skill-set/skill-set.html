@@ -7,7 +7,8 @@
                 <p>{{'skillSet.skills_text' | translate }}</p>
                 <p id="spec_p">{{'skillSet.missing' | translate }}<span>{{'skillSet.skill' | translate }}</span></p>
                 <p>{{'skillSet.skill_contact_me' | translate }}</p>
-                <button>{{'skillSet.lets_talk' | translate }}</button>
+                <a href="#contact_div"><div id="lets_talk"> <button>{{'skillSet.lets_talk' | translate }}</button>
+                </div></a>
             </div>
             <div id="skill_icons">
                 @for (icon of skillIcons; track $index) {

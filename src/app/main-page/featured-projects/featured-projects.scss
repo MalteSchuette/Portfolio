@@ -151,34 +151,23 @@ h2 {
         align-items: center;
         gap: 4px;
     }
+    flex-wrap: wrap;
 }
 
 #overlay_window {
     width: 1000px;
-    height: 700px;
     background: linear-gradient(to left, #1C1C1C 40%, #08463B);
     border-radius: 24px;
     padding: 24px;
     display: flex;
+    flex-direction: column;
 
 }
 
 #overlay_img {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex: 1;
-    >button {
-        color: rgba(61, 207, 182, 1);
-        background: none;
-        border: none;
-        transition: .2s ease-in-out;
-        &:hover {
-            scale: 1.1;
-            color: white;
-        }
-    }
+    justify-content: center;
+    align-items: center;
     >img {
         width: 400px;
         object-fit: cover;
@@ -186,6 +175,22 @@ h2 {
         margin-bottom: 80px;
         border-radius: 16px;
     }
+}
+
+.close_button {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    color: white;
+    margin: 16px;
+    cursor: pointer;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+#overlay_content_sides {
+    display: flex;
 }
 
 .links_button {
@@ -205,7 +210,16 @@ h2 {
 #next_project_button {
     display: flex;
     align-items: center;
+    align-self: flex-end;
     gap: 8px;
+    color: rgba(61, 207, 182, 1);
+    background: none;
+    border: none;
+    transition: .2s ease-in-out;
+    &:hover {
+        scale: 1.1;
+        color: white;
+    }
 }
 
 .max_width_1920 {
@@ -266,6 +280,17 @@ h2 {
     }
 }
 
+@media (max-width: 1000px) {
+    #overlay_window {
+        width: auto;
+        margin: 8px
+    }
+    #overlay_content_sides {
+        flex-direction: column-reverse;
+    }
+}
+
+
 @media (max-width: 600px) {
     .button_projects {
         display: flex;
@@ -275,16 +300,55 @@ h2 {
     }
 }
 
+@media (max-width: 550px) {
+    #overlay_img {
+        >img {
+            width: 280px;
+            object-fit: cover;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border-radius: 16px;
+        }
+    }
+
+    #overlay_info {
+        >h1 {
+        font-size: 64px;
+        color: rgba(61, 207, 182, 1);
+        }
+        >h2 {
+        font-size: 32px;
+        font-family: 'Fira Code';
+        color: white; 
+        }
+        >h3 {
+        font-size: 18px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        }
+    }
+
+    .links_button {
+        width: 96px;
+        margin: 8px;
+        }
+}
+
 @media (max-width: 400px) {
     .button_projects {
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    #overlay_img {
+        >img {
+            display: none;
+        }
+    }
+
     h2 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     h3 {
@@ -293,6 +357,11 @@ h2 {
 
     p {
         font-size: 16px;
+    }
+
+    #featured_projects {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 

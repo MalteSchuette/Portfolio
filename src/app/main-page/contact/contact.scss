@@ -61,13 +61,56 @@ form {
 #submit_button {
     width: 172px;
     height: 48px;
-    border: 1px solid #FFFFFF;
-    border-radius: 100px;
-    background: none;
+    background: linear-gradient(to top right, #1C1C1C 40%, #08463B);
     color: white;
-    margin: 32px;
-    align-self: center;
+    border: none;
+    border-radius: 10px;
+    z-index: 2;
+    cursor: pointer;
 }
+
+.submit_button_div {
+    position: relative;
+    align-self: center;
+    width: 174px;
+    height: 50px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.submit_button_div::after, .submit_button_div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: conic-gradient(from var(--angle), transparent 40%, rgba(61, 207, 182, 1));
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle:360deg;
+    }
+}
+
+.submit_button_div::before {
+    filter: blur(1.5rem)
+    opacity(0.5)
+}
+
 
 #privacy_checkbox {
     display: flex;
@@ -87,14 +130,17 @@ form {
 }
 
 #project_aim {
+    display: inline-block;
     font-family: 'Fira Code';
     font-size: 24px;
     font-weight: 700;
     color: rgba(61, 207, 182, 1);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 #contact_info {
-    flex: 1;
+    max-width: 600px;
         >h3 {
             font-size: 24px;
             font-weight: 500;
@@ -105,7 +151,7 @@ form {
             font-size: 64px;
             font-weight: 700;
             color: rgba(61, 207, 182, 1);
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
         >p {
             color: white;
@@ -121,3 +167,27 @@ form {
     color: rgba(61, 207, 182, 1);
 }
 
+@media (max-width: 1450px) {
+    #contact_info {
+    max-width: 400px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #contact_div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    #contact_div {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #contact_info {
+        >h2 {
+            font-size: 56px;
+        }
+    }
+}

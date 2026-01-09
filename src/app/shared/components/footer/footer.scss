@@ -35,3 +35,14 @@ footer {
             margin-bottom: 8px;
         }
 }
+
+@media (max-width: 650px) {
+    .footer_content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

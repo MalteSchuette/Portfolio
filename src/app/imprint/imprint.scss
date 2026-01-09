@@ -1,0 +1,26 @@
+h1 {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+#imprint_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    min-height: 100vh;
+    background: linear-gradient(to top right, #1C1C1C 40%, #08463B);
+    color: white;
+}
+
+#small_text {
+    max-width: 1920px;
+    margin: 32px 132px;
+    >h3 {
+        margin-top: 24px;
+    }
+    >p {
+        color: rgba(61, 207, 182, 1);
+    }
+}

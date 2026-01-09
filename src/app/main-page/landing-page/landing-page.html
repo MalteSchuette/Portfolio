@@ -1,12 +1,15 @@
 <div id="background_div">
     <div class="landing_page">
-        <app-header id="header"></app-header>
         <div id="name_title">
             <p> {{'landingPage.job_title' | translate}}</p>
             <h1>Malte Schütte</h1>
             <div class="link_buttons">
-                <a href="#featured_projects"><button>{{'landingPage.check_work' | translate}}</button></a>
-                <a href="#contact_div"><button>{{'landingPage.contact_me' | translate}}</button></a>
+                <a href="#featured_projects"><div class="button_lp">
+                    <button>{{'landingPage.check_work' | translate}}</button>
+                </div></a>
+                <a href="#contact_div"><div class="button_lp">
+                    <button>{{'landingPage.contact_me' | translate}}</button>
+                </div></a>
             </div>
         </div>
         <div id="banner">
@@ -29,7 +32,7 @@
                 <hr id="left_line">
             </div>
             <div id="right_decoration">
-                <a href="mailto:malte.schuette92@gmail.com"><span id="mail_adress">malte.schuette92@gmail.com</span></a>
+                <a href="mailto:malte.schuette92@gmail.com"><span id="mail_adress">mail@msdev.com</span></a>
                 <a href="mailto:malte.schuette92@gmail.com">   
                     <img id="hidden_mail" class="link_icons" 
                     [src]="mailIsHovered ? './assets/icons/mail_hover.svg' : './assets/icons/mail.svg'" 
