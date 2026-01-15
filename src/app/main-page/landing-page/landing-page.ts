@@ -4,7 +4,7 @@ import {TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [Header, TranslatePipe,],
+  imports: [TranslatePipe,],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss'
 })
@@ -15,22 +15,14 @@ export class LandingPage {
   linkedIsHovered =false;
   
   spans: string[] = [
-    'Available for remote work',
-      '·',
-      'Full Stack Developer',
-      '·',
-      'Based in Berlin',
-      '·',
-      'Open to relocate',
-      '·',
-      'Available for remote work',
-      '·',
-      'Full Stack Developer',
-      '·',
-      'Based in Berlin',
-      '·',
-      'Open to relocate',
-      '·'
-  ]
+  'Available for remote work',
+  '·',
+  'Full Stack Developer',
+  '·',
+  'Based in Berlin',
+  '·',
+  'Open to relocate',
+  '·'
+];
 
 }

@@ -14,15 +14,16 @@
         </div>
         <div id="banner">
             <div id="info">
-                <div id="info_content">
+    <div class="scroll-container">
+        @for (i of [1,2,3,4]; track $index) {
+            <div class="scroll-content">
                 @for (span of spans; track $index) {
                     <span>{{span}}</span>
                 }
-                @for (span of spans; track $index) {
-                    <span>{{span}}</span>
-                }
-                </div>
             </div>
+        }
+    </div>
+</div>
         </div>
         <div id="decoration_landing">
             <div id="left_decoration">
