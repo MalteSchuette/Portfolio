@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -20,8 +20,17 @@ export class Header {
 
   burgerOpen = false;
   isHovered = false;
+  hidden = false;
+  private lastScrollY = 0;
   private translate = inject(TranslateService);
   currentLang: string = "";
+
+  @HostListener('window:scroll')
+  onScroll() {
+    const currentY = window.scrollY;
+    this.hidden = currentY > this.lastScrollY && currentY > 80;
+    this.lastScrollY = currentY;
+  }
 
   useLanguage(language: string): void {
       this.translate.use(language);
