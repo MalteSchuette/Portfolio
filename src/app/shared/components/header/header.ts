@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, inject } from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -23,7 +23,15 @@ export class Header {
   hidden = false;
   private lastScrollY = 0;
   private translate = inject(TranslateService);
+  private elRef = inject(ElementRef);
   currentLang: string = "";
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    if (this.burgerOpen && !this.elRef.nativeElement.contains(event.target)) {
+      this.burgerOpen = false;
+    }
+  }
 
   @HostListener('window:scroll')
   onScroll() {

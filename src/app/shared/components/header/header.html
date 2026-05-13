@@ -18,12 +18,12 @@
             (mouseleave)="isHovered = false">
     </div>
     <div id="burger_div" [ngStyle]="{'display': burgerOpen ? 'flex' : 'none'}">
-        <a href="#about_me">{{'header.about_me' | translate}}</a>
-        <a href="#technologies_div">Skills</a>
-        <a href="#featured_projects">{{'header.projects' | translate}}</a>
+        <a href="#about_me" (click)="toggleBurger()">{{'header.about_me' | translate}}</a>
+        <a href="#technologies_div" (click)="toggleBurger()">Skills</a>
+        <a href="#featured_projects" (click)="toggleBurger()">{{'header.projects' | translate}}</a>
         <div id="lang_btn">
             <button [class.active]="currentLang === 'en'" (click)="useLanguage('en')"> EN </button>
             <button [class.active]="currentLang === 'de'" (click)="useLanguage('de')">DE</button>
-        </div>    
+        </div>
     </div>
 </div>

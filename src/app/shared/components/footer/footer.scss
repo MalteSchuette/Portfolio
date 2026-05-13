@@ -24,7 +24,16 @@ footer {
 #pers_info {
     font-size: 16px;
     color: white;
+
+    >a {
+        text-decoration: none;
+        color: inherit;
+        &:hover >h3 {
+            color: rgba(61, 207, 182, 0.7);
+        }
+    }
 }
+
 
 #links {
     display: flex;

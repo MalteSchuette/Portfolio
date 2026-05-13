@@ -28,8 +28,9 @@ export class FeaturedProjects {
   }
 
   toggleOverlay(modi:number) {
-    this.showOverlay = !this.showOverlay
+    this.showOverlay = !this.showOverlay;
     this.modi = modi;
+    document.body.style.overflow = this.showOverlay ? 'hidden' : '';
   }
 
   nextProject() {

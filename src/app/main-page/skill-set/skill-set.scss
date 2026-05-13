@@ -73,15 +73,28 @@ span {
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     justify-items: center;
-    align-items: center; 
-    img {
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-        transition: transform 0.2s ease;
-        &:hover {
+    align-items: start;
+}
+
+.skill_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+    &:hover {
         transform: scale(1.1);
-        }
+    }
+    img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+    span {
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        font-family: 'Karla';
     }
 }
 
@@ -188,10 +201,11 @@ span {
 @media (max-width: 420px) {
     #skill_icons {
         width: 300px;
-        >img {
-            width: 75px;
-            height: 75px;
-        }
+    }
+
+    .skill_item img {
+        width: 48px;
+        height: 48px;
     }
 
     #skill_set{

@@ -54,11 +54,24 @@
     "form_checkbox": "I have read the",
     "form_pp": "privacy policy",
     "form_confirm": "and I agree to the processing of my data according to the conditions described there.",
-    "say_hello": "Submit"
+    "say_hello": "Submit",
+    "success_title": "Message sent!",
+    "success_text": "I'll get back to you as soon as possible.",
+    "error_name": "Please enter your name.",
+    "error_email": "Please enter a valid email address.",
+    "error_message": "Please enter a message.",
+    "error_privacy": "Please accept the privacy policy."
   },
 
   "header": {
     "about_me": "Intro",
     "projects": "Projects"
+  },
+
+  "banner": {
+    "remote": "Available for remote work",
+    "title": "Full Stack Developer",
+    "location": "Based in Berlin",
+    "relocate": "Open to relocate"
   }
 }

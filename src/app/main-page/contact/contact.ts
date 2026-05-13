@@ -11,6 +11,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Contact {
   mailTest = true;
+  messageSent = false;
 
   http = inject(HttpClient)
   
@@ -18,6 +19,7 @@ export class Contact {
     name:"",
     email: "",
     message: "",
+    privacy: false,
   }
 
   post = {
@@ -36,8 +38,8 @@ export class Contact {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.messageSent = true;
           },
           error: (error) => {
             console.error(error);
@@ -45,8 +47,8 @@ export class Contact {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
+      this.messageSent = true;
     }
   }
 }

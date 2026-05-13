@@ -12,7 +12,10 @@
             </div>
             <div id="skill_icons">
                 @for (icon of skillIcons; track $index) {
-                    <img [src]="icon" alt="Icons von Skills">
+                    <div class="skill_item">
+                        <img [src]="icon.src" [alt]="icon.label">
+                        <span>{{icon.label}}</span>
+                    </div>
                 }
             </div>
         </div>

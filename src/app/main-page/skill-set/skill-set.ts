@@ -10,17 +10,17 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class SkillSet {
 
 skillIcons = [
-  './assets/icons/HTML.svg',
-  './assets/icons/CSS.svg',
-  './assets/icons/JavaScript.svg',
-  './assets/icons/MaterialDesign.svg',
-  './assets/icons/TypeScript.svg',
-  './assets/icons/Angular.svg',
-  './assets/icons/Firebase.svg',
-  './assets/icons/GIT.svg',
-  './assets/icons/Rest-Api.svg',
-  './assets/icons/Scrum.svg',
-  './assets/icons/GrowthMindset.svg'
+  { src: './assets/icons/Property 1=HTML.png',           label: 'HTML' },
+  { src: './assets/icons/Property 1=CSS.png',            label: 'CSS' },
+  { src: './assets/icons/Property 1=JavaScript.png',     label: 'JavaScript' },
+  { src: './assets/icons/Property 1=Material Design.png',label: 'Material Design' },
+  { src: './assets/icons/Property 1=TypeScript.png',     label: 'TypeScript' },
+  { src: './assets/icons/Property 1=Angular.png',        label: 'Angular' },
+  { src: './assets/icons/Property 1=Firebase.png',       label: 'Firebase' },
+  { src: './assets/icons/Property 1=Git.png',            label: 'Git' },
+  { src: './assets/icons/Property 1=Rest-Api.png',       label: 'REST API' },
+  { src: './assets/icons/Property 1=Scrum.png',          label: 'Scrum' },
+  { src: './assets/icons/Property 1=GrowthMindset.png',  label: 'Growth Mindset' },
 ]
 
 }

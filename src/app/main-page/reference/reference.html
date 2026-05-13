@@ -7,6 +7,8 @@
         [class.active]="i === 1"
         [class.left]="i === 0"
         [class.right]="i === 2"
+        (click)="i === 0 ? prev() : i === 2 ? next() : null"
+        [style.cursor]="i !== 1 ? 'pointer' : 'default'"
       >
         <p id="special_p">{{ reference.comment }}</p>
         <div class="reference_person">

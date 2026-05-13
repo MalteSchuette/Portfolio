@@ -54,11 +54,24 @@
             "form_checkbox": "Ich habe die",
             "form_pp": "Datenschutzerklärung",
             "form_confirm": " gelesen und stimme der Verarbeitung meiner Daten entsprechend den dort beschriebenen Bedingungen zu.",
-            "say_hello": "Abschicken"
+            "say_hello": "Abschicken",
+            "success_title": "Nachricht gesendet!",
+            "success_text": "Ich melde mich so schnell wie möglich bei dir.",
+            "error_name": "Bitte gib deinen Namen ein.",
+            "error_email": "Bitte gib eine gültige E-Mail-Adresse ein.",
+            "error_message": "Bitte gib eine Nachricht ein.",
+            "error_privacy": "Bitte akzeptiere die Datenschutzerklärung."
         },
 
         "header": {
             "about_me": "Intro",
             "projects": "Projekte"
+        },
+
+        "banner": {
+            "remote": "Verfügbar für Remote-Arbeit",
+            "title": "Full Stack Entwickler",
+            "location": "Wohnhaft in Berlin",
+            "relocate": "Offen für Standortwechsel"
         }
 }

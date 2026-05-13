@@ -1,28 +1,32 @@
-import { Component } from '@angular/core';
-import { Header } from '../../shared/components/header/header';
-import {TranslatePipe } from '@ngx-translate/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [TranslatePipe,],
+  imports: [TranslatePipe],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss'
 })
-export class LandingPage {
+export class LandingPage implements OnInit {
 
   mailIsHovered = false;
   gitIsHovered = false;
-  linkedIsHovered =false;
-  
-  spans: string[] = [
-  'Available for remote work',
-  '·',
-  'Full Stack Developer',
-  '·',
-  'Based in Berlin',
-  '·',
-  'Open to relocate',
-  '·'
-];
+  linkedIsHovered = false;
+
+  spans: string[] = [];
+
+  private translate = inject(TranslateService);
+
+  ngOnInit() {
+    this.updateSpans();
+    this.translate.onLangChange.subscribe(() => this.updateSpans());
+  }
+
+  private updateSpans() {
+    const keys = ['banner.remote', 'banner.title', 'banner.location', 'banner.relocate'];
+    this.translate.get(keys).subscribe(t => {
+      this.spans = [t['banner.remote'], '·', t['banner.title'], '·', t['banner.location'], '·', t['banner.relocate'], '·'];
+    });
+  }
 
 }
