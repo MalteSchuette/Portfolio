@@ -39,7 +39,7 @@ export class Contact {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            this.messageSent = true;
+            this.showSuccessMessage();
           },
           error: (error) => {
             console.error(error);
@@ -48,7 +48,12 @@ export class Contact {
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
-      this.messageSent = true;
+      this.showSuccessMessage();
     }
+  }
+
+  showSuccessMessage() {
+    this.messageSent = true;
+    setTimeout(() => this.messageSent = false, 5000);
   }
 }

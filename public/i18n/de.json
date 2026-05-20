@@ -73,5 +73,17 @@
             "title": "Full Stack Entwickler",
             "location": "Wohnhaft in Berlin",
             "relocate": "Offen für Standortwechsel"
+        },
+
+        "imprint": {
+            "title": "Datenschutzerklärung",
+            "imprint": "Impressum",
+            "exploring": "Exploring the Board",
+            "acceptance": "Nutzungsbedingungen",
+            "scope": "Umfang und Eigentümerschaft des Produkts",
+            "proprietary": "Eigentumsrechte",
+            "use": "Nutzung des Produkts",
+            "disclaimer": "Haftungsausschluss und Haftungsbeschränkung",
+            "indemnity": "Freistellung"
         }
 }

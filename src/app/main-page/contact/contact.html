@@ -29,7 +29,7 @@
                 <span class="error_msg">{{'form.error_message' | translate}}</span>
             }
             <div id="privacy_checkbox">
-                <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required> <p>{{'form.form_checkbox' | translate}}  <a id="pp_link" href=""> {{'form.form_pp' | translate}} </a> {{'form.form_confirm' | translate}}</p>
+                <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" id="privacy" name="privacy" required> <p>{{'form.form_checkbox' | translate}}  <a id="pp_link" href="/imprint" target="_blank"> {{'form.form_pp' | translate}} </a> {{'form.form_confirm' | translate}}</p>
             </div>
             @if (!privacy.valid && privacy.touched) {
                 <span class="error_msg">{{'form.error_privacy' | translate}}</span>

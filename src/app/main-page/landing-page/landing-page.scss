@@ -1,3 +1,9 @@
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
 #background_div {
     width: 100%;
     background: linear-gradient(to top right, #1C1C1C 40%, #08463B);

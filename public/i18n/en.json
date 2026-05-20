@@ -73,5 +73,17 @@
     "title": "Full Stack Developer",
     "location": "Based in Berlin",
     "relocate": "Open to relocate"
+  },
+
+  "imprint": {
+    "title": "Legal Notice",
+    "imprint": "Imprint",
+    "exploring": "Exploring the Board",
+    "acceptance": "Acceptance of terms",
+    "scope": "Scope and ownership of the product",
+    "proprietary": "Proprietary rights",
+    "use": "Use of the product",
+    "disclaimer": "Disclaimer of warranties and limitation of liability",
+    "indemnity": "Indemnity"
   }
 }
