@@ -31,13 +31,18 @@ export class FeaturedProjects {
     this.showOverlay = !this.showOverlay;
     this.modi = modi;
     document.body.style.overflow = this.showOverlay ? 'hidden' : '';
+    if (this.showOverlay) this.resetScroll();
   }
 
   nextProject() {
-    if(this.modi < 3) {
-      this.modi++
-    } else {
-      this.modi = 1
-    }
+    this.modi = this.modi < 3 ? this.modi + 1 : 1;
+    this.resetScroll();
+  }
+
+  private resetScroll() {
+    setTimeout(() => {
+      const el = document.getElementById('overlay_content_sides');
+      if (el) el.scrollTop = 0;
+    });
   }
 }

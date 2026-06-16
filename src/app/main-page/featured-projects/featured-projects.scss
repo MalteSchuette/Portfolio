@@ -288,12 +288,16 @@ h2 {
 @media (max-width: 1000px) {
     #overlay_window {
         width: auto;
-        height: auto;
-        max-height: 90vh;
+        height: 90vh;
         margin: 8px;
     }
     #overlay_content_sides {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        min-height: 0;
+        overflow-y: auto;
+    }
+    #overlay_img {
+        order: -1;
     }
 }
 
