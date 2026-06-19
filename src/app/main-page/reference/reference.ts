@@ -13,31 +13,16 @@ export class Reference {
 
   references = [
     {
-      name: 'Rick Astley',
-      comment: `We're no strangers to love
-                You know the rules and so do I
-                A full commitment's what I'm thinkin' of
-                You wouldn't get this from any other guy
-                I just wanna tell you how I'm feeling
-                Gotta make you understand`
+      name: 'Jermaine Jérôme Bärwolf',
+      comment: `Malte was consistently present and reliable throughout the entire group work. I would especially like to emphasize his active participation. Overall, working with him was pleasant and goal-oriented.`
     },
     {
-      name: 'Rick Astley',
-      comment: `Never gonna give you up, never gonna let you down
-                Never gonna run around and desert you
-                Never gonna make you cry, never gonna say goodbye
-                Never gonna tell a lie and hurt you`
+      name: 'Tim Daubner',
+      comment: `Malte was a very structured and reliable team member throughout our shared project work. He brings clear ideas to the table, is open to discussion, and helps maintain a productive workflow. Thanks to his strong logical thinking and quick understanding, he keeps an overview even when dealing with more complex tasks. I would happily work with Malte again at any time.`
     },
     {
-      name: 'Rick Astley',
-      comment: `We've known each other for so long
-                Your heart's been aching, but you're too shy to say it
-                Inside, we both know what's been going on
-                We know the game and we're gonna play it`
-    },
-    {
-      name: 'Rick Astley',
-      comment: `Test23`
+      name: 'Dmitri Zyganow',
+      comment: `I had the pleasure of working with Malte for a year in a marketing agency on a long-term project where he played a central managing role. His ability to handle stressful situations, adept to unexpected outcomes and stay motivated to constantly improve every aspect of his work made him a valuable asset of our team. As a colleague and a friend he earns my highest recommendation.`
     }
   ];
 
