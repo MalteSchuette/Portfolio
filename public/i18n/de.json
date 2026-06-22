@@ -8,18 +8,18 @@
         "aboutMe": {
             "about_me": "Kurzes Intro",
             "short_intro": " Über mich",
-            "intro": "Ich liebe es, aus Ideen greifbare Lösungen zu schaffen. Die IT gibt mir die Möglichkeit, Kreativität und technisches Wissen zu verbinden. Probleme zu lösen und Innovationen umzusetzen treibt mich an – genau das fasziniert mich an der Welt des Programmierens.",
-            "location": "Mit Wohnsitz in Woltersdorf bei Berlin stehe ich sowohl für Remote-Arbeit als auch für Tätigkeiten vor Ort zur Verfügung.",
-            "new_skills": "Ich lerne sehr gerne neue Technologien, da mir jede neue Fähigkeit neue Lösungswege eröffnet und es mir ermöglicht, Projekte effizienter anzugehen.",
-            "problem_solving": "Ich betrachte zuerst das große Ganze, setze Prioritäten und nutze bewährte Methoden. Bei komplexen Problemen sorge ich parallel mit Plan-B-Lösungen für Fortschritt, arbeite flexibel allein oder im Team und lerne aus jeder Aufgabe, um effizientere Lösungen zu finden."
+            "intro": "Effizienter Code trifft auf strukturiertes Denken. Als Full-Stack-Entwickler mit Background in Projektmanagement und Design baue ich Software, die unter der Haube performant läuft – und an der Oberfläche durch Klarheit überzeugt.",
+            "location": "Standort & Flexibilität: Ansässig in Woltersdorf bei Berlin – unkompliziert verfügbar für hybride Modelle in der Region oder vollwertige Remote-Rollen.",
+            "new_skills": "Strukturiert im Sprint: Mein Background im Projektmanagement ist beim Programmieren mein größter Vorteil. Ich weiß genau, was zuerst stehen muss, kann Deadlines realistisch einschätzen und garantiere eine hocheffiziente Zusammenarbeit mit Design- und Produkt-Teams.",
+            "problem_solving": "Die Kunst des Problemlösens: Ich liebe effiziente Prozesse, denke aber auch mal bewusst um die Ecke, wenn Standardwege blockiert sind. Für mich bedeutet Programmieren, die perfekte Balance zu finden: Lösungen zu entwickeln, die unkonventionell sein dürfen, aber die Kernidee ohne faule Kompromisse auf den Punkt bringen."
         },
 
         "skillSet": {
             "headline": "Fachkenntnisse",
-            "skills_text": "Ich verfüge über fundierte Kenntnisse in der Frontend-Entwicklung mit HTML, CSS und JavaScript sowie im modernen Material Design. Zusätzlich beherrsche ich TypeScript, Angular und die Arbeit mit Git sowie REST-APIs. Darüber hinaus bringe ich Erfahrung in agilen Methoden wie Scrum mit und lege großen Wert auf kontinuierliches Lernen und ein Growth Mindset, um mich stetig weiterzuentwickeln und neue Technologien schnell zu adaptieren.",
+            "skills_text": "Mein aktives Werkzeugset für moderne Full-Stack-Anwendungen. Mein Fokus liegt auf einem tiefen Verständnis für logische Zusammenhänge, saubere Datenflüsse und eine strukturierte Software-Architektur. Das ermöglicht es mir, mich schnell in bestehende Codebases einzufinden und Dokumentationen effizient zu nutzen. Dieses Systemverständnis schließt auch die Infrastruktur mit ein: Da ich auch privat komplett unter Linux (Pop!_OS) entwickle, gehört der sichere Umgang mit dem Terminal für mich ganz natürlich zum Alltag.",
             "missing": "Fehlt ein ",
             "skill": "Skill?",
-            "skill_contact_me": "Ich habe hier bewusst nur die Bereiche aufgeführt, in denen ich wirklich sattelfest bin. Mit neuen Tools habe ich keine Berührungsängste – ich probiere viel privat aus und erweitere meinen Stack laufend.",
+            "skill_contact_me": "Genau das treibt mich an. Technologie wandelt sich ständig – wenn in Ihrem Stack andere Tools zum Einsatz kommen, sehe ich das als willkommene Herausforderung. Dank meines breiten Fundaments habe ich keine Berührungsängste vor neuen Frameworks und bringe das methodische Verständnis mit, um neue Stacks schnell zu durchdringen und produktiv einzusetzen.",
             "lets_talk": "Frag gerne nach!"
         },
 
@@ -38,11 +38,11 @@
 
         "contact": {
             "contact_me": "Mein Kontakt",
-            "work_together": "Lass uns starten.",
-            "problem_solve": "Gibts ein Problem zu lösen?",
-            "why_me": "Ich freue mich über jede Kontaktaufnahme – ganz egal ob du jemanden für ein Projekt, eine Rolle oder nur zum Sparring suchst. Sag mir einfach kurz, in welchem Bereich du Unterstützung brauchst und welche Rolle dir vorschwebt. Mir geht es darum, echte Business-Value zu erzeugen und Projekte schneller in Richtung ",
-            "project_aim": " „funktioniert, bringt Nutzen, kann skaliert werden“",
-            "write_me": " zu bringen. Falls du jemanden suchst, der mitdenkt und Verantwortung übernimmt: melde dich gerne!"
+            "work_together": "Lass uns zusammenarbeiten",
+            "problem_solve": "Gibt es ein Problem zu lösen?",
+            "why_me": "Ich freue mich über jede Kontaktaufnahme – primär, um Ihr Entwickler-Team langfristig in Festanstellung zu verstärken, aber auch für gezielte, anspruchsvolle Projektunterstützung. Mein Fokus liegt darauf, Software von Grund auf durchdacht aufzubauen, damit sie von Tag eins an stabil und produktiv läuft.",
+            "project_aim": "„It works, it delivers value, it can scale\"",
+            "write_me": "Wenn Sie einen Full-Stack-Entwickler suchen, der vorausschauend agiert, technische Probleme zuverlässig löst und Verantwortung für das Endprodukt übernimmt: Lassen Sie uns sprechen!"
         },
 
         "form": {

@@ -8,18 +8,18 @@
   "aboutMe": {
     "about_me": "Short intro",
     "short_intro": "About me",
-    "intro": "I love turning ideas into tangible solutions. IT allows me to combine creativity with technical expertise. Solving problems and building something new is what drives me – this is exactly what fascinates me about the world of programming.",
-    "location": "Based in Woltersdorf near Berlin, I am available for both remote and on-site work.",
-    "new_skills": "I enjoy learning new technologies because every new skill opens new ways to solve problems and allows me to approach projects more efficiently.",
-    "problem_solving": "I always start by seeing the big picture, set priorities and apply proven methods. With complex problems I make sure progress continues by preparing plan-B solutions in parallel, work flexibly alone or in a team, and take learnings from every task to find more efficient solutions."
+    "intro": "Efficient code meets structured thinking. As a full-stack developer with a background in project management and design, I build software that performs under the hood – and convinces at the surface through clarity.",
+    "location": "Location & Flexibility: Based in Woltersdorf near Berlin – easily available for hybrid models in the region or fully remote roles.",
+    "new_skills": "Structured in the Sprint: My background in project management is my biggest advantage in programming. I know exactly what needs to come first, can estimate deadlines realistically, and guarantee highly efficient collaboration with design and product teams.",
+    "problem_solving": "The Art of Problem-Solving: I love efficient processes, but also deliberately think outside the box when standard paths are blocked. For me, programming means finding the perfect balance: developing solutions that may be unconventional, but that nail the core idea without lazy compromises."
   },
 
   "skillSet": {
     "headline": "Expertise",
-    "skills_text": "I have strong knowledge in frontend development with HTML, CSS and JavaScript as well as modern Material Design. I also work confidently with TypeScript, Angular, Git and REST APIs. On top of that, I have experience with agile methods such as Scrum and put a strong focus on continuous learning and a growth mindset in order to evolve and adopt new technologies quickly.",
+    "skills_text": "My active toolkit for modern full-stack applications. My focus is on a deep understanding of logical connections, clean data flows, and structured software architecture. This allows me to quickly navigate existing codebases and use documentation efficiently. This systems understanding also extends to infrastructure: since I develop entirely on Linux (Pop!_OS) in my personal time, confident use of the terminal comes naturally to me.",
     "missing": "Missing a ",
     "skill": "skill?",
-    "skill_contact_me": "I deliberately list only areas where I am truly rock solid. I have zero hesitation when it comes to new tools – I experiment a lot on my own and continuously expand my stack.",
+    "skill_contact_me": "That's exactly what drives me. Technology constantly evolves – if your stack uses different tools, I see that as a welcome challenge. Thanks to my broad foundation, I have no hesitation with new frameworks and bring the methodical understanding to quickly grasp new stacks and put them to productive use.",
     "lets_talk": "Lets talk!"
   },
 
@@ -40,9 +40,9 @@
     "contact_me": "Contact me",
     "work_together": "Let's work together",
     "problem_solve": "Is there a problem to solve?",
-    "why_me": "I appreciate any contact – whether you are looking for someone for a project, a role, or just for sparring. Tell me briefly what kind of support you need and what role you have in mind. My focus is to generate real business value and push projects faster towards",
-    "project_aim": "“it works, it delivers value, it can scale”",
-    "write_me": "If you are looking for someone who thinks ahead and takes ownership: reach out anytime!"
+    "why_me": "I welcome any inquiry – primarily to join your development team on a permanent basis, but also for targeted, demanding project support. My focus is on building software thoughtfully from the ground up, so it runs stable and productive from day one.",
+    "project_aim": "\"It works, it delivers value, it can scale\"",
+    "write_me": "If you are looking for a full-stack developer who thinks ahead, reliably solves technical problems, and takes ownership of the end product: let's talk!"
   },
 
   "form": {
