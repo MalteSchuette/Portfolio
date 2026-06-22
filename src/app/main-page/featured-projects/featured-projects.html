@@ -12,8 +12,8 @@
                     <span>Angular | TypeScript | HTML | CSS | Firebase</span>
                 </button>
                 <button class="button_projects" (click)="toggleOverlay(2)" (mouseover)="showImage(projectImages[1])" (mouseleave)="clearImage()">
-                    <span class="project_name">Sharkie</span>
-                    <span>HTML | CSS | JavaScript</span>
+                    <span class="project_name">ChatOnStage</span>
+                    <span>Python | Django | Angular | TypeScript</span>
                 </button>
                 <button class="button_projects" (click)="toggleOverlay(3)" (mouseover)="showImage(projectImages[2])" (mouseleave)="clearImage()">
                     <span class="project_name">Videoflix</span>
@@ -73,26 +73,28 @@
                         <div id="overlay_content_sides">
                             <div id="overlay_info">
                                 <h1>02</h1>
-                                <h2>Sharkie</h2>
+                                <h2>ChatOnStage</h2>
                                 <h3>{{'projects.what_about' | translate}}</h3>
                                 <p>{{'projects.sharkie_explain' | translate}}</p>
                                 <div id="project_icons">
                                     <div>
-                                        <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
-                                        <span>JavaScript</span>
+                                        <img src="./assets/icons/python.svg" alt="Python Icon">
+                                        <span>Python</span>
                                     </div>
                                     <div>
-                                        <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
-                                        <span>HTML</span>
+                                        <img src="./assets/icons/django.svg" alt="Django Icon">
+                                        <span>Django</span>
                                     </div>
                                     <div>
-                                        <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
-                                        <span>CSS</span>
-                                    </div>                           
+                                        <img src="./assets/icons/ov_angular_icon.svg" alt="Angular Icon">
+                                        <span>Angular</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/ov_ts_icon.svg" alt="TypeScript Icon">
+                                        <span>TypeScript</span>
+                                    </div>
                                 </div>
-                                <div >
-                                    <a href="https://github.com/MalteSchuette/13_Sharkie" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
-                                    <a href="https://malte-schuette.developerakademie.net/12_Sharkie/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                <div id="links_button">
                                 </div>
                             </div>
                             <div id="overlay_img">
