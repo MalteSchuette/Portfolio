@@ -29,7 +29,7 @@
             "what_about": "Worum geht es in diesem Projekt?",
             "join_explain": "Ein Task-Manager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben per Drag & Drop – und ordne ihnen Nutzer und Kategorien zu.",
             "sharkie_explain": "Ein 2D-Spiel rund um den kleinen Hai Sharkie. Du steuerst ihn durch die Unterwasserwelt und besiegst seine Gegner. Das Projekt zeigt objektorientierte Programmierung in Aktion – vom Verhalten der Figuren bis zur Spielmechanik.",
-            "third_project": "Placeholder für was auch immer hier reinkommt"
+            "third_project": "Backend einer Netflix-ähnlichen Streaming-Plattform – mit E-Mail-Kontoaktivierung, JWT-Authentifizierung und automatischer FFMPEG-Konvertierung in drei HLS-Auflösungen. Vollständig containerisiert via Docker mit Redis-Caching."
         },
 
         "references": {

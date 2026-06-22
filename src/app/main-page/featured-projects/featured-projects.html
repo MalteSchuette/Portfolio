@@ -16,8 +16,8 @@
                     <span>HTML | CSS | JavaScript</span>
                 </button>
                 <button class="button_projects" (click)="toggleOverlay(3)" (mouseover)="showImage(projectImages[2])" (mouseleave)="clearImage()">
-                    <span class="project_name">Pokedex</span>
-                    <span>HTML | CSS | JavaScript</span>
+                    <span class="project_name">Videoflix</span>
+                    <span>Python | Django | PostgreSQL | Redis | Docker</span>
                 </button>
             </div>
             <div id="project_window">
@@ -107,30 +107,38 @@
                         <div id="overlay_content_sides">
                             <div id="overlay_info">
                                 <h1>03</h1>
-                                <h2>Pokedex</h2>
+                                <h2>Videoflix</h2>
                                 <h3>{{'projects.what_about' | translate}}</h3>
-                                <p>{{'projects.join_explain' | translate}}</p>
+                                <p>{{'projects.third_project' | translate}}</p>
                                 <div id="project_icons">
                                     <div>
-                                        <img src="./assets/icons/ov_js_icon.svg" alt="JavaScript Icon">
-                                        <span>JavaScript</span>
+                                        <img src="./assets/icons/python.svg" alt="Python Icon">
+                                        <span>Python</span>
                                     </div>
                                     <div>
-                                        <img src="./assets/icons/ov_html_icon.svg" alt="HTML Icon">
-                                        <span>HTML</span>
+                                        <img src="./assets/icons/django.svg" alt="Django Icon">
+                                        <span>Django</span>
                                     </div>
                                     <div>
-                                        <img src="./assets/icons/ov_css_icon.svg" alt="CSS Icon">
-                                        <span>CSS</span>
-                                    </div>                                                        
+                                        <img src="./assets/icons/postgresql.svg" alt="PostgreSQL Icon">
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/redis.svg" alt="Redis Icon">
+                                        <span>Redis</span>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/icons/docker.svg" alt="Docker Icon">
+                                        <span>Docker</span>
+                                    </div>
                                 </div>
                                 <div id="links_button">
-                                    <a href="https://github.com/MalteSchuette/11_Pokedex" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
-                                    <a href="https://malte-schuette.developerakademie.net/11_pokedex/index.html" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                    <a href="https://github.com/MalteSchuette/Videoflix" target="_blank"><button class="links_button">Github <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
+                                    <a href="https://videoflix.malte-schuette.eu/" target="_blank"><button class="links_button">Live Test <img src="./assets/icons/arrow_outward.svg" alt=""></button></a>
                                 </div>
                             </div>
                             <div id="overlay_img">
-                                <img src='./assets/img/pokedex.webp' alt="">
+                                <img src='./assets/img/videoflix.webp' alt="">
                             </div>
                         </div>
                         <button id="next_project_button" (click)="nextProject()">Next Project <img src="./assets/icons/arrow_forward.svg" alt=""></button>

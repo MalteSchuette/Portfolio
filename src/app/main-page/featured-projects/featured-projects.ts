@@ -13,7 +13,7 @@ export class FeaturedProjects {
   projectImages = [
     './assets/img/Kanban.webp',
     './assets/img/Sharkie.webp',
-    './assets/img/pokedex.webp'
+    './assets/img/videoflix.webp'
   ]
 
   showOverlay:boolean = false;

@@ -29,7 +29,7 @@
     "what_about": "What is this project about?",
     "join_explain": "A task manager based on the Kanban principle. Create and organize tasks via drag & drop – and assign users and categories.",
     "sharkie_explain": "A 2D game about the little shark called Sharkie. You guide him through the underwater world and defeat his enemies. This project shows object-oriented programming in action – from character behavior to game mechanics.",
-    "third_project": "Placeholder for whatever gets added here later"
+    "third_project": "Backend for a Netflix-style streaming platform – featuring email account activation, JWT authentication, and automatic FFMPEG conversion into three HLS resolutions. Fully containerized via Docker with Redis caching."
   },
 
   "references": {
