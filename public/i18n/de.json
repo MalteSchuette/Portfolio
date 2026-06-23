@@ -28,7 +28,7 @@
             "explore": "Schau dich gern um. Hier bekommst du am besten ein Gefühl dafür, wie ich arbeite.",
             "what_about": "Worum geht es in diesem Projekt?",
             "join_explain": "Ein Task-Manager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben per Drag & Drop – und ordne ihnen Nutzer und Kategorien zu.",
-            "sharkie_explain": "Echtzeit-Voting-Plattform für Stadion-Streams. Zuschauer stimmen live via Twitch ab – die Ergebnisse werden per WebSocket in Echtzeit in ein Pixelmapping übersetzt und auf physische LED-Bandensysteme im Stadion übertragen. Von der Grundidee bis zum Deployment vollständig selbst entwickelt.",
+            "sharkie_explain": "Echtzeit-Voting-Plattform für Stadion-Streams. Zuschauer stimmen live via Twitch ab – die Ergebnisse werden per WebSocket in Echtzeit in ein Pixelmapping übersetzt und auf physische LED-Bandensysteme im Stadion übertragen. Von der Grundidee bis zum Deployment vollständig selbst entwickelt. Das Projekt befindet sich in der aktiven Vermarktung – das Repository ist daher nicht öffentlich. Ein Gastzugang zum Live-System steht bereit.",
             "third_project": "Backend einer Netflix-ähnlichen Streaming-Plattform – mit E-Mail-Kontoaktivierung, JWT-Authentifizierung und automatischer FFMPEG-Konvertierung in drei HLS-Auflösungen. Vollständig containerisiert via Docker mit Redis-Caching."
         },
 

@@ -28,7 +28,7 @@
     "explore": "Take a look around. This is the best way to get a feeling for how I build things.",
     "what_about": "What is this project about?",
     "join_explain": "A task manager based on the Kanban principle. Create and organize tasks via drag & drop – and assign users and categories.",
-    "sharkie_explain": "Real-time voting platform for stadium live streams. Viewers vote live via Twitch – results are pushed via WebSocket in real time, translated into a pixel mapping, and rendered on physical LED banner systems in the stadium. Fully self-developed from concept to deployment.",
+    "sharkie_explain": "Real-time voting platform for stadium live streams. Viewers vote live via Twitch – results are pushed via WebSocket in real time, translated into a pixel mapping, and rendered on physical LED banner systems in the stadium. Fully self-developed from concept to deployment. The project is currently in active commercialization – the repository is therefore not public. A guest account for the live system is available.",
     "third_project": "Backend for a Netflix-style streaming platform – featuring email account activation, JWT authentication, and automatic FFMPEG conversion into three HLS resolutions. Fully containerized via Docker with Redis caching."
   },
 

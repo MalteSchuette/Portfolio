@@ -12,7 +12,7 @@ export class FeaturedProjects {
 
   projectImages = [
     './assets/img/Kanban.webp',
-    './assets/img/Sharkie.webp',
+    './assets/img/ChatOnStage.webp',
     './assets/img/videoflix.webp'
   ]
 
