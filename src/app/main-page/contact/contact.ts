@@ -10,8 +10,9 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './contact.scss'
 })
 export class Contact {
-  mailTest = true;
+  mailTest = false;
   messageSent = false;
+  formSubmitted = false;
 
   http = inject(HttpClient)
   
@@ -23,7 +24,7 @@ export class Contact {
   }
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://portfolio.malte-schuette.eu/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -34,10 +35,12 @@ export class Contact {
   };
 
   onSubmit(ngForm: NgForm) {
+    this.formSubmitted = true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.formSubmitted = false;
             ngForm.resetForm();
             this.showSuccessMessage();
           },

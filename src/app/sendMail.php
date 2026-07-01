@@ -1,37 +1,46 @@
 <?php
 
+require '/var/www/portfolio/mail_config.php';
+require '/var/www/portfolio/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+
 switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: POST");
-        header("Access-Control-Allow-Headers: content-type");
+    case 'OPTIONS':
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST');
+        header('Access-Control-Allow-Headers: content-type');
         exit;
-        case("POST"): //Send the email;
-            header("Access-Control-Allow-Origin: *");
-            // Payload is not send to $_POST Variable,
-            // is send to php:input as a text
-            $json = file_get_contents('php://input');
-            //parse the Payload from text format to Object
-            $params = json_decode($json);
-    
-            $email = $params->email;
-            $name = $params->name;
-            $message = $params->message;
-    
-            $recipient = 'DEINE@MAIL.de';  
-            $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
-    
-            $headers   = array();
-            $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=utf-8';
+    case 'POST':
+        header('Access-Control-Allow-Origin: *');
 
-            // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+        $json    = file_get_contents('php://input');
+        $params  = json_decode($json);
+        $name    = $params->name;
+        $email   = $params->email;
+        $message = $params->message;
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
-            break;
-        default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
-            exit;
-    } 
+        $mail = new PHPMailer(true);
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = MAIL_USER;
+        $mail->Password   = MAIL_PASS;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        $mail->setFrom(MAIL_USER, 'Portfolio Kontakt');
+        $mail->addAddress(MAIL_USER);
+        $mail->addReplyTo($email, $name);
+
+        $mail->isHTML(true);
+        $mail->Subject = "Kontaktanfrage von $name";
+        $mail->Body    = "Von: $name &lt;$email&gt;<br><br>$message";
+
+        $mail->send();
+        echo json_encode(['ok' => true]);
+        break;
+    default:
+        header('Allow: POST', true, 405);
+        exit;
+}

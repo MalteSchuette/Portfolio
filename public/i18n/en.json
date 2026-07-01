@@ -47,7 +47,7 @@
 
   "form": {
     "form_name": "What is your name?",
-    "form_name_ph": "Your name could be here",
+    "form_name_ph": "Tell me your name",
     "form_mail_ph": "yourMail@email.gg",
     "form_message": "How can I help you?",
     "form_message_ph": "Hey Malte, I need your help with...",
